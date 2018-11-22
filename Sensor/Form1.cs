@@ -419,7 +419,28 @@ namespace Sensor
 
         #region 数据处理逻辑
 
+        /// <summary>
+        /// 改变label显示的内容
+        /// </summary>
+        /// <param name="v"></param>
+        /// <param name="data"></param>
+        void ChangeLabelValue(Label v,string data)
+        {
+            if (v.Text!=data)
+            {
+                v.Text = data;
+            }
+        }
+
+        /// <summary>
+        /// 传感器值
+        /// </summary>
         double sensorValue = 0;
+
+        /// <summary>
+        /// 串口接收到的数据进行处理
+        /// </summary>
+        /// <param name="data"></param>
         void DataHandle(string data)
         {
             //如果是第1个标识符
@@ -428,7 +449,7 @@ namespace Sensor
                 try
                 {
                     //显示获取的字符串
-                    value1.Text = data;
+                    ChangeLabelValue(value1, data);
                     //取字符串中的数值，8代表取第8个字符开始的子串
                     data = data.Substring(8);
                     //加权滤波
@@ -452,7 +473,7 @@ namespace Sensor
             {
                 try
                 {
-                    value2.Text = data;
+                    ChangeLabelValue(value2, data);
                     data = data.Substring(7);
                     sensorValue = 0.2 * sensorValue + 0.8 * Convert.ToDouble(data);
                     if (sensorValue>10&& sensorValue<100)//判断传感器值为xx时候
