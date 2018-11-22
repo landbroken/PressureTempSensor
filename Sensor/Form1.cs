@@ -422,15 +422,24 @@ namespace Sensor
         double sensorValue = 0;
         void DataHandle(string data)
         {
+            //如果是第1个标识符
             if (data.StartsWith("Value = "))
             {
                 try
                 {
+                    //显示获取的字符串
+                    value1.Text = data;
+                    //取字符串中的数值，8代表取第8个字符开始的子串
                     data = data.Substring(8);
-                    sensorValue = 0.9 * sensorValue + 0.1 * Convert.ToDouble(data);
-                    if (true)//判断传感器值为xx时候
+                    //加权滤波
+                    sensorValue = 0.2 * sensorValue + 0.8 * Convert.ToDouble(data);
+                    if (sensorValue > 10 && sensorValue < 100)//判断传感器值为xx时候
                     {
                         pictureBox1.BackColor = Color.Blue;
+                    }
+                    else if (sensorValue > 200 && sensorValue < 300)
+                    {
+                        pictureBox1.BackColor = Color.Green;
                     }
                 }
                 catch (Exception)
@@ -438,12 +447,14 @@ namespace Sensor
 
                 }
             }
+            //如果是第2个标识符
             else if (data.StartsWith("Pin1 = "))
             {
                 try
                 {
+                    value2.Text = data;
                     data = data.Substring(7);
-                    sensorValue = 0.9 * sensorValue + 0.1 * Convert.ToDouble(data);
+                    sensorValue = 0.2 * sensorValue + 0.8 * Convert.ToDouble(data);
                     if (sensorValue>10&& sensorValue<100)//判断传感器值为xx时候
                     {
                         pictureBox2.BackColor = Color.Blue;

@@ -31,19 +31,27 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSwitch = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.sp1 = new System.IO.Ports.SerialPort(this.components);
-            this.cbSerial = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.radio1 = new System.Windows.Forms.RadioButton();
+            this.rdSendStr = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSecond = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbTimeSend = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSend = new System.Windows.Forms.TextBox();
+            this.btnSend = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbParityCRC = new System.Windows.Forms.ComboBox();
             this.cbStop = new System.Windows.Forms.ComboBox();
@@ -53,6 +61,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cbBaudRate = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbSerial = new System.Windows.Forms.ComboBox();
+            this.sp1 = new System.IO.Ports.SerialPort(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsSpNum = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsBaudRate = new System.Windows.Forms.ToolStripStatusLabel();
@@ -60,31 +71,29 @@
             this.tsStopBits = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsParity = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmSend = new System.Windows.Forms.Timer(this.components);
-            this.btnSend = new System.Windows.Forms.Button();
-            this.txtSend = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbTimeSend = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSecond = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.radio1 = new System.Windows.Forms.RadioButton();
-            this.rdSendStr = new System.Windows.Forms.RadioButton();
+            this.value1 = new System.Windows.Forms.Label();
+            this.value2 = new System.Windows.Forms.Label();
+            this.value3 = new System.Windows.Forms.Label();
+            this.value4 = new System.Windows.Forms.Label();
+            this.value5 = new System.Windows.Forms.Label();
+            this.value6 = new System.Windows.Forms.Label();
+            this.value7 = new System.Windows.Forms.Label();
+            this.value8 = new System.Windows.Forms.Label();
+            this.value9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -98,6 +107,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.value9);
+            this.groupBox1.Controls.Add(this.value8);
+            this.groupBox1.Controls.Add(this.value7);
+            this.groupBox1.Controls.Add(this.value6);
+            this.groupBox1.Controls.Add(this.value5);
+            this.groupBox1.Controls.Add(this.value4);
+            this.groupBox1.Controls.Add(this.value3);
+            this.groupBox1.Controls.Add(this.value2);
+            this.groupBox1.Controls.Add(this.value1);
             this.groupBox1.Controls.Add(this.pictureBox9);
             this.groupBox1.Controls.Add(this.pictureBox8);
             this.groupBox1.Controls.Add(this.pictureBox7);
@@ -109,19 +127,64 @@
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(425, 337);
+            this.groupBox1.Size = new System.Drawing.Size(425, 361);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // pictureBox2
+            // pictureBox9
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(160, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.Location = new System.Drawing.Point(310, 263);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Location = new System.Drawing.Point(160, 263);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox8.TabIndex = 7;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Location = new System.Drawing.Point(10, 263);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Location = new System.Drawing.Point(310, 147);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Location = new System.Drawing.Point(160, 143);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Location = new System.Drawing.Point(10, 143);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -132,59 +195,14 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBox2
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Location = new System.Drawing.Point(10, 106);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.Location = new System.Drawing.Point(160, 106);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Location = new System.Drawing.Point(310, 106);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
-            this.pictureBox7.Location = new System.Drawing.Point(10, 182);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
-            this.pictureBox8.Location = new System.Drawing.Point(160, 182);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.White;
-            this.pictureBox9.Location = new System.Drawing.Point(310, 182);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(160, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // btnSwitch
             // 
@@ -214,31 +232,127 @@
             this.groupBox2.Controls.Add(this.btnSwitch);
             this.groupBox2.Location = new System.Drawing.Point(493, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(553, 337);
+            this.groupBox2.Size = new System.Drawing.Size(553, 361);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // cbSerial
+            // groupBox7
             // 
-            this.cbSerial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSerial.FormattingEnabled = true;
-            this.cbSerial.Location = new System.Drawing.Point(88, 25);
-            this.cbSerial.Margin = new System.Windows.Forms.Padding(4);
-            this.cbSerial.Name = "cbSerial";
-            this.cbSerial.Size = new System.Drawing.Size(81, 23);
-            this.cbSerial.TabIndex = 12;
+            this.groupBox7.Controls.Add(this.radio1);
+            this.groupBox7.Controls.Add(this.rdSendStr);
+            this.groupBox7.Location = new System.Drawing.Point(354, 167);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Size = new System.Drawing.Size(179, 46);
+            this.groupBox7.TabIndex = 35;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "发送数据格式";
             // 
-            // label1
+            // radio1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(7, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 18);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "串口：";
+            this.radio1.AutoSize = true;
+            this.radio1.Location = new System.Drawing.Point(12, 19);
+            this.radio1.Margin = new System.Windows.Forms.Padding(4);
+            this.radio1.Name = "radio1";
+            this.radio1.Size = new System.Drawing.Size(74, 19);
+            this.radio1.TabIndex = 7;
+            this.radio1.TabStop = true;
+            this.radio1.Text = "16进制";
+            this.radio1.UseVisualStyleBackColor = true;
+            // 
+            // rdSendStr
+            // 
+            this.rdSendStr.AutoSize = true;
+            this.rdSendStr.Location = new System.Drawing.Point(97, 19);
+            this.rdSendStr.Margin = new System.Windows.Forms.Padding(4);
+            this.rdSendStr.Name = "rdSendStr";
+            this.rdSendStr.Size = new System.Drawing.Size(73, 19);
+            this.rdSendStr.TabIndex = 6;
+            this.rdSendStr.TabStop = true;
+            this.rdSendStr.Text = "字符串";
+            this.rdSendStr.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(324, 179);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(22, 15);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "秒";
+            // 
+            // txtSecond
+            // 
+            this.txtSecond.Location = new System.Drawing.Point(242, 176);
+            this.txtSecond.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSecond.Name = "txtSecond";
+            this.txtSecond.Size = new System.Drawing.Size(57, 25);
+            this.txtSecond.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 233);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 15);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "发送数据：";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(10, 304);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(279, 15);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "(16进制时，用空格或“，”将字节隔开)";
+            // 
+            // cbTimeSend
+            // 
+            this.cbTimeSend.AutoSize = true;
+            this.cbTimeSend.Location = new System.Drawing.Point(13, 178);
+            this.cbTimeSend.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTimeSend.Name = "cbTimeSend";
+            this.cbTimeSend.Size = new System.Drawing.Size(119, 19);
+            this.cbTimeSend.TabIndex = 17;
+            this.cbTimeSend.Text = "定时发送数据";
+            this.cbTimeSend.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(152, 178);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "时间间隔：";
+            // 
+            // txtSend
+            // 
+            this.txtSend.Location = new System.Drawing.Point(13, 263);
+            this.txtSend.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSend.Name = "txtSend";
+            this.txtSend.Size = new System.Drawing.Size(375, 25);
+            this.txtSend.TabIndex = 22;
+            // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(308, 296);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(80, 31);
+            this.btnSend.TabIndex = 23;
+            this.btnSend.Text = "发送";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // groupBox3
             // 
@@ -367,6 +481,27 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "波特率:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(7, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "串口：";
+            // 
+            // cbSerial
+            // 
+            this.cbSerial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSerial.FormattingEnabled = true;
+            this.cbSerial.Location = new System.Drawing.Point(88, 25);
+            this.cbSerial.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSerial.Name = "cbSerial";
+            this.cbSerial.Size = new System.Drawing.Size(81, 23);
+            this.cbSerial.TabIndex = 12;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -413,122 +548,104 @@
             this.tsParity.Size = new System.Drawing.Size(107, 20);
             this.tsParity.Text = "停止位:未指定|";
             // 
-            // btnSend
+            // value1
             // 
-            this.btnSend.Location = new System.Drawing.Point(308, 296);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(80, 31);
-            this.btnSend.TabIndex = 23;
-            this.btnSend.Text = "发送";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.value1.AutoSize = true;
+            this.value1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value1.Location = new System.Drawing.Point(7, 86);
+            this.value1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value1.Name = "value1";
+            this.value1.Size = new System.Drawing.Size(44, 18);
+            this.value1.TabIndex = 36;
+            this.value1.Text = "null";
             // 
-            // txtSend
+            // value2
             // 
-            this.txtSend.Location = new System.Drawing.Point(13, 263);
-            this.txtSend.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSend.Name = "txtSend";
-            this.txtSend.Size = new System.Drawing.Size(375, 25);
-            this.txtSend.TabIndex = 22;
+            this.value2.AutoSize = true;
+            this.value2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value2.Location = new System.Drawing.Point(157, 86);
+            this.value2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value2.Name = "value2";
+            this.value2.Size = new System.Drawing.Size(44, 18);
+            this.value2.TabIndex = 37;
+            this.value2.Text = "null";
             // 
-            // label4
+            // value3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 233);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 15);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "发送数据：";
+            this.value3.AutoSize = true;
+            this.value3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value3.Location = new System.Drawing.Point(307, 86);
+            this.value3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value3.Name = "value3";
+            this.value3.Size = new System.Drawing.Size(44, 18);
+            this.value3.TabIndex = 38;
+            this.value3.Text = "null";
             // 
-            // label9
+            // value4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label9.Location = new System.Drawing.Point(10, 304);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(279, 15);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "(16进制时，用空格或“，”将字节隔开)";
+            this.value4.AutoSize = true;
+            this.value4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value4.Location = new System.Drawing.Point(7, 196);
+            this.value4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value4.Name = "value4";
+            this.value4.Size = new System.Drawing.Size(44, 18);
+            this.value4.TabIndex = 39;
+            this.value4.Text = "null";
             // 
-            // cbTimeSend
+            // value5
             // 
-            this.cbTimeSend.AutoSize = true;
-            this.cbTimeSend.Location = new System.Drawing.Point(13, 178);
-            this.cbTimeSend.Margin = new System.Windows.Forms.Padding(4);
-            this.cbTimeSend.Name = "cbTimeSend";
-            this.cbTimeSend.Size = new System.Drawing.Size(119, 19);
-            this.cbTimeSend.TabIndex = 17;
-            this.cbTimeSend.Text = "定时发送数据";
-            this.cbTimeSend.UseVisualStyleBackColor = true;
+            this.value5.AutoSize = true;
+            this.value5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value5.Location = new System.Drawing.Point(157, 196);
+            this.value5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value5.Name = "value5";
+            this.value5.Size = new System.Drawing.Size(44, 18);
+            this.value5.TabIndex = 40;
+            this.value5.Text = "null";
             // 
-            // label2
+            // value6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(152, 178);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "时间间隔：";
+            this.value6.AutoSize = true;
+            this.value6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value6.Location = new System.Drawing.Point(307, 200);
+            this.value6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value6.Name = "value6";
+            this.value6.Size = new System.Drawing.Size(44, 18);
+            this.value6.TabIndex = 41;
+            this.value6.Text = "null";
             // 
-            // txtSecond
+            // value7
             // 
-            this.txtSecond.Location = new System.Drawing.Point(242, 176);
-            this.txtSecond.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSecond.Name = "txtSecond";
-            this.txtSecond.Size = new System.Drawing.Size(57, 25);
-            this.txtSecond.TabIndex = 33;
+            this.value7.AutoSize = true;
+            this.value7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value7.Location = new System.Drawing.Point(7, 316);
+            this.value7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value7.Name = "value7";
+            this.value7.Size = new System.Drawing.Size(44, 18);
+            this.value7.TabIndex = 42;
+            this.value7.Text = "null";
             // 
-            // label3
+            // value8
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(324, 179);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 15);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "秒";
+            this.value8.AutoSize = true;
+            this.value8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value8.Location = new System.Drawing.Point(157, 316);
+            this.value8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value8.Name = "value8";
+            this.value8.Size = new System.Drawing.Size(44, 18);
+            this.value8.TabIndex = 43;
+            this.value8.Text = "null";
             // 
-            // groupBox7
+            // value9
             // 
-            this.groupBox7.Controls.Add(this.radio1);
-            this.groupBox7.Controls.Add(this.rdSendStr);
-            this.groupBox7.Location = new System.Drawing.Point(354, 167);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(179, 46);
-            this.groupBox7.TabIndex = 35;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "发送数据格式";
-            // 
-            // radio1
-            // 
-            this.radio1.AutoSize = true;
-            this.radio1.Location = new System.Drawing.Point(12, 19);
-            this.radio1.Margin = new System.Windows.Forms.Padding(4);
-            this.radio1.Name = "radio1";
-            this.radio1.Size = new System.Drawing.Size(74, 19);
-            this.radio1.TabIndex = 7;
-            this.radio1.TabStop = true;
-            this.radio1.Text = "16进制";
-            this.radio1.UseVisualStyleBackColor = true;
-            // 
-            // rdSendStr
-            // 
-            this.rdSendStr.AutoSize = true;
-            this.rdSendStr.Location = new System.Drawing.Point(97, 19);
-            this.rdSendStr.Margin = new System.Windows.Forms.Padding(4);
-            this.rdSendStr.Name = "rdSendStr";
-            this.rdSendStr.Size = new System.Drawing.Size(73, 19);
-            this.rdSendStr.TabIndex = 6;
-            this.rdSendStr.TabStop = true;
-            this.rdSendStr.Text = "字符串";
-            this.rdSendStr.UseVisualStyleBackColor = true;
+            this.value9.AutoSize = true;
+            this.value9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.value9.Location = new System.Drawing.Point(307, 316);
+            this.value9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.value9.Name = "value9";
+            this.value9.Size = new System.Drawing.Size(44, 18);
+            this.value9.TabIndex = 44;
+            this.value9.Text = "null";
             // 
             // Form1
             // 
@@ -543,22 +660,23 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,6 +726,15 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.RadioButton radio1;
         private System.Windows.Forms.RadioButton rdSendStr;
+        private System.Windows.Forms.Label value9;
+        private System.Windows.Forms.Label value8;
+        private System.Windows.Forms.Label value7;
+        private System.Windows.Forms.Label value6;
+        private System.Windows.Forms.Label value5;
+        private System.Windows.Forms.Label value4;
+        private System.Windows.Forms.Label value3;
+        private System.Windows.Forms.Label value2;
+        private System.Windows.Forms.Label value1;
     }
 }
 
