@@ -1,0 +1,9 @@
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\bin\Debug\Sensor.exe.config
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.csprojResolveAssemblyReference.cache
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.Form1.resources
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.Properties.Resources.resources
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.csproj.GenerateResource.Cache
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\bin\Debug\Sensor.exe
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\bin\Debug\Sensor.pdb
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.exe
+G:\mission\CSharp_Program\PressureTempSensor\Sensor\obj\Debug\Sensor.pdb
